@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+:root {
+  --Cyan: #2ab2af;
+  --Bright-Yellow: #c0df34;
+  --Light-Gray: #e5eff5;
+  --Grayish-Blue: #98a6bd;
+}
+
+.body {
+  background-color: var(--Light-Gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 10px;
+  width: 635px;
+  overflow: hidden;
+}
+
+.container .containerPrincipal {
+  width: 100%;
+  background: #ffffff;
+  padding: 45px 40px;
+}
+
+.container .containerPrincipal .principalTitle {
+  color: var(--Cyan);
+}
+
+.container .containerPrincipal .principalSubTitle {
+  color: var(--Bright-Yellow);
+}
+
+.container .containerPrincipal .principalText {
+  color: var(--Grayish-Blue);
+  line-height: 1.5;
+}
+
+.container .containerSecundario {
+  width: 100%;
+  display: flex;
+}
+
+.container .containerSecundario .containerSecundario1 {
+  width: 50%;
+  padding: 45px 40px;
+  background-color: var(--Cyan);
+  color: #ffffff;
+}
+.container .containerSecundario .containerSecundario1 .secundarioTitle1 {
+  font-size: 18px;
+}
+.container .containerSecundario .containerSecundario1 .containerPrecio {
+  display: flex;
+  align-items: center;
+}
+.container .containerSecundario .containerSecundario1 .containerPrecio h3 {
+  font-size: 30px;
+  margin-right: 10px;
+}
+.container .containerSecundario .containerSecundario1 .containerPrecio span {
+  color: var(--Light-Gray);
+}
+.container .containerSecundario .containerSecundario1 p {
+  margin-bottom: 10px;
+}
+.container .containerSecundario .containerSecundario1 .btnSign {
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  background-color: var(--Bright-Yellow);
+  padding: 10px 0px;
+  text-align: center;
+  box-shadow: 0px 3px 6px 0px rgba(34, 142, 139, 0.5);
+}
+/* ///////////////////////////////////////////////////////// */
+.container .containerSecundario .containerSecundario2 {
+  width: 50%;
+  padding: 45px 40px;
+  background-color: #4abebd;
+  color: #ffffff;
+}
+.container .containerSecundario .containerSecundario2 h4 {
+  margin-bottom: 15px;
+}
+.container .containerSecundario .containerSecundario2 p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--Light-Gray);
+}
+
+@media (max-width: 370px) {
+  .body {
+    height: 100%;
+    padding: 30px 20px;
+  }
+  .container .containerSecundario {
+    display: inline-block;
+  }
+  .container .containerSecundario .containerSecundario1 {
+    width: 100%;
+  }
+  .container .containerSecundario .containerSecundario2 {
+    width: 100%;
+  }
+}

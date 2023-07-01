@@ -1,0 +1,189 @@
+:root {
+  --pale-blue: #e0e8ff;
+  --bright-blue: #3829e0;
+  --very-pale-blue: #f5f7ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  background-color: var(--pale-blue);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__svg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.main__svg2 {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.card {
+  background-color: #fff;
+  width: 450px;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  padding-bottom: 50px;
+  box-shadow: 0px 18px 15px -1px rgba(76, 61, 238, 0.24);
+}
+
+.headerCard {
+  width: 450px;
+  margin-bottom: 40px;
+}
+
+.titleCard {
+  color: var(--dark-blue);
+  margin: 0 auto;
+  width: 350px;
+  margin-bottom: 35px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.textCard {
+  color: var(--desaturated-blue);
+  margin: 0 auto;
+  width: 350px;
+  margin-bottom: 20px;
+}
+
+.planCard {
+  width: 350px;
+  height: 100px;
+  background-color: var(--very-pale-blue);
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 20px;
+  margin-bottom: 30px;
+}
+
+.costCard {
+  display: flex;
+}
+
+.iconListenCard {
+  margin-right: 15px;
+}
+
+.titlePlan {
+  color: var(--dark-blue);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.textPlan {
+  padding-top: 5px;
+  color: var(--desaturated-blue);
+  font-size: 14px;
+}
+
+.changePlan {
+  color: var(--bright-blue);
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+.changePlan:hover {
+  color: #766cf1;
+}
+
+.btnCard {
+  margin: 0 auto;
+  border-radius: 7px;
+  width: 350px;
+  height: 50px;
+  color: #fff;
+  background-color: var(--bright-blue);
+  border: none;
+  font-weight: 700;
+  box-shadow: 0px 18px 15px -1px rgba(56,41,224,0.24);
+  margin-bottom: 35px;
+  display:block;
+  transition: 0.5s;
+}
+
+.btnCard:hover {
+  background-color: #766cf1;
+}
+
+.cancelCard {
+  color: var(--desaturated-blue);
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.cancelCard:hover {
+  color: var(--dark-blue);
+}
+
+@media(max-width:375px) {
+  .main__svg {
+    display: none;
+  }
+  
+  .main__svg2 {
+    display: block;
+  }
+  .card {
+    width: 325px;
+    padding-bottom: 35px;
+  }
+
+  .headerCard {
+    width: 325px;
+    margin-bottom: 25px;
+  }
+  
+  .titleCard {
+    width: 275px;
+    margin-bottom: 15px;
+  }
+
+  .textCard {
+    width: 275px;
+    margin-bottom: 20px;
+  }
+
+  .planCard {
+    width: 275px;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+
+  .btnCard {
+    width: 275px;
+    height: 50px;
+    margin-bottom: 25px;
+  }
+}

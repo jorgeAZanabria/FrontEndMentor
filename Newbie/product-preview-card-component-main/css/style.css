@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-background: #F3EAE3; 
+  --color-title: #20252B;
+  --color-text: #7E7E86;
+  --color-precio: #3A7E65;
+  --color-boton: #1A4031;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Fraunces', serif;
+}
+
+.body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-background);
+}
+
+.containerCard {
+  display: flex;
+  border-radius: 10px;
+  width: 600px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+.containerCard .containerImgCard {
+  background-image: url('./img/image-product-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 450px;
+}
+.containerCard .containerImgCard .img-responsive {
+  display: none;
+}
+
+.containerCard .containerTextCard {
+  padding: 35px;
+  width: 50%;
+}
+
+.containerCard .containerTextCard .textDescription {
+  color: var(--color-text);
+  font-family:var(--font-primary);
+  font-size: 12px;
+  font-weight: 500px;
+  letter-spacing: 5.8px;
+  margin-bottom: 25px;
+}
+
+.containerCard .containerTextCard .textTitle {
+  color: var(--color-title);
+  font-family:var(--font-secondary);
+  font-size: 32px;
+  font-weight: 700px;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.containerCard .containerTextCard .text {
+  color: var(--color-text);
+  font-family:var(--font-primary);
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.containerCard .containerTextCard .containerCardPrecio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.containerCard .containerTextCard .containerCardPrecio .textPrecio {
+  color: var(--color-precio);
+  font-family:var(--font-secondary);
+  font-size: 32px;
+}
+
+.containerCard .containerTextCard .containerCardPrecio .textDescuento {
+  color: var(--color-text);
+  font-family:var(--font-primary);
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.containerCard .containerTextCard .btnCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--color-precio);
+  color: #ffffff;
+  font-family:var(--font-primary);
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 12px;
+  border: none;
+  transition: 0.5s;
+}
+
+.containerCard .containerTextCard .btnCard img {
+  margin-right: 10px;
+}
+
+.containerCard .containerTextCard .btnCard:hover {
+  background-color: var(--color-boton);
+}
+
+@media (max-width: 600px) {
+  .containerCard {
+    width: 90%;
+    display: block;
+  }
+
+  .containerCard .containerImgCard  {
+    background-image: url('./img/image-product-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 240px;
+  }
+  .containerCard .containerTextCard {
+    padding: 35px;
+    width: 100%;
+  }
+}

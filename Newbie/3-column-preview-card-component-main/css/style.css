@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --background-color: #f2f2f2;
+  --background-card1: #e38826;
+  --background-card2: #006970;
+  --background-card3: #004241;
+  --white: #ffffff;
+  --color-text: rgba(255, 255, 255, 0.75);
+  --font-primary: "Big Shoulders Display", cursive;
+  --font-secundary: "Lexend Deca", sans-serif;
+}
+
+.body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerCards {
+  width: 920px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.containerCards .containerCard1 {
+  width: 33.33%;
+  height: 500px;
+  padding: 45px;
+  background-color: var(--background-card1);
+}
+
+.containerCards .containerCard1 .iconCard1 {
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard1 .cardTitle1 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard1 .cardText1 {
+  font-family: var(--font-secundary);
+  font-size: 12px;
+  color: var(--color-text);
+  margin-bottom: 85px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+
+.containerCards .containerCard1 .cardBtn1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--background-card1);
+  font-family: var(--font-secundary);
+  width: 80%;
+  padding: 15px 0px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.containerCards .containerCard1 .cardBtn1:hover {
+  background-color: var(--background-card1);
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.containerCards .containerCard2 {
+  width: 33.33%;
+  padding: 45px;
+  height: 500px;
+  background-color: var(--background-card2);
+}
+
+.containerCards .containerCard2 .iconCard2 {
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard2 .cardTitle2 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard2 .cardText2 {
+  font-family: var(--font-secundary);
+  font-size: 12px;
+  color: var(--color-text);
+  margin-bottom: 85px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+
+.containerCards .containerCard2 .cardBtn2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--background-card2);
+  font-family: var(--font-secundary);
+  width: 80%;
+  padding: 15px 0px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.containerCards .containerCard2 .cardBtn2:hover {
+  background-color: var(--background-card2);
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+.containerCards .containerCard3 {
+  width: 33.33%;
+  padding: 45px;
+  height: 500px;
+  background-color: var(--background-card3);
+}
+
+.containerCards .containerCard3 .iconCard3 {
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard3 .cardTitle3 {
+  font-family: var(--font-primary);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.containerCards .containerCard3 .cardText3 {
+  font-family: var(--font-secundary);
+  font-size: 12px;
+  color: var(--color-text);
+  margin-bottom: 85px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
+
+.containerCards .containerCard3 .cardBtn3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--white);
+  color: var(--background-card3);
+  font-family: var(--font-secundary);
+  width: 80%;
+  padding: 15px 0px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+}
+
+.containerCards .containerCard3 .cardBtn3:hover {
+  background-color: var(--background-card3);
+  border: 2px solid var(--white);
+  color: var(--white);
+}
+
+@media (max-width: 650px) {
+  .body {
+    height: 100%;
+  }
+  .containerCards {
+    display: block;
+    width: 90%;
+    margin-top: 40px;
+  }
+  .containerCards .containerCard1 {
+    width: 100%;
+  }
+  .containerCards .containerCard2 {
+    width: 100%;
+  }
+  .containerCards .containerCard3 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 325px) {
+  .containerCards {
+    margin-top: 80px;
+  }
+  .containerCards .containerCard1 {
+    height: 100%;
+  }
+  .containerCards .containerCard1 .cardText1 {
+    margin-bottom: 25px;
+  }
+  .containerCards .containerCard1 .cardBtn1 {
+    width: 75%;
+  }
+  .containerCards .containerCard2 {
+    height: 100%;
+  }
+  .containerCards .containerCard2 .cardText2 {
+    margin-bottom: 25px;
+  }
+  .containerCards .containerCard2 .cardBtn2 {
+    width: 75%;
+  }
+  .containerCards .containerCard3 {
+    height: 100%;
+  }
+  .containerCards .containerCard3 .cardText3 {
+    margin-bottom: 25px;
+  }
+  .containerCards .containerCard3 .cardBtn3 {
+    width: 75%;
+  }
+}

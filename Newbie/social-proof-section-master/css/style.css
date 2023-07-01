@@ -1,0 +1,248 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'League Spartan', sans-serif;
+}
+
+:root{
+  --Very-Dark-Magenta: #502050;
+  --Soft-Pink: #ee68a4;
+  --Dark-Grayish-Magenta: #937b92;
+  --Light-Grayish-Magenta: #f7f2f7;
+  --White: #ffffff;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  align-items: center;
+}
+
+.container .containerText {
+  width: 50%;
+  padding: 20px 0px;
+  color: var(--Very-Dark-Magenta);
+}
+
+.container .containerText .title {
+  font-size: 64px;
+  margin-bottom: 30px;
+}
+
+.container .containerText .text {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.container .containerRankings {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .containerRankings .containerStart {
+  align-self: flex-start;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px 0px 20px 30px;
+  background-color: var(--Light-Grayish-Magenta);
+  margin: 10px 0;
+}
+
+.container .containerRankings .containerCenter {
+  align-self: center;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px 0px 20px 30px;
+  background-color: var(--Light-Grayish-Magenta);
+  margin: 10px 0;
+}
+
+.container .containerRankings .containerEnd {
+  align-self: flex-end;
+  width: 80%;
+  border-radius: 10px;
+  padding: 20px 0px 20px 30px;
+  background-color: var(--Light-Grayish-Magenta);
+  margin: 10px 0;
+}
+
+.container .containerRankings .columnText {
+  display: flex;
+  align-items: center;
+}
+
+.container .containerRankings .listRanking {
+  display: flex;
+  align-items: center;
+}
+
+.container .containerRankings .listRanking .icon-star {
+  list-style: none;
+  margin-right:10px
+}
+
+.container .containerRankings .columnText .listaText {
+  color: var(--Very-Dark-Magenta);
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 20px;
+}
+
+.containerCards {
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.containerCards .cardStar{
+  width: 30%;
+  height: 100%;
+  background-color: #502050;
+  color: var(--White);
+  padding: 25px 30px;
+  border-radius: 10px;
+}
+
+.containerCards .cardCenter{
+  width: 30%;
+  height: 100%;
+  background-color: #502050;
+  color: var(--White);
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.containerCards .cardEnd{
+  width: 30%;
+  height: 100%;
+  background-color: #502050;
+  color: var(--White);
+  padding: 25px 30px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.containerCards .cardPerfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.containerCards .cardPerfil img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.containerCards .cardPerfil .cardTextTitle {
+  margin-left: 20px;
+}
+
+.containerCards .cardPerfil h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.containerCards .cardPerfil p {
+  color: var(--Soft-Pink);
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.containerCards .cardText{
+  line-height: 1.5;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    padding: 5px;
+  }
+  .containerCards {
+    width: 100%;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 656px) {
+  .body {
+    margin-top: 20px;
+    height: 100%;
+  }
+  .container {
+    display: block
+  }
+  .container .containerText {
+    width: 100%;
+    padding: 20px 0px;
+    color: var(--Very-Dark-Magenta);
+    text-align: center;
+  }
+  .container .containerText .title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .container .containerText .text {
+    font-weight: 400;
+    font-size: 18px;
+  }
+  .container .containerRankings {
+    width: 100%;
+    display: block;
+    padding: 0px 30px;
+  }
+  .container .containerRankings .containerStart {
+    width: 100%;
+    padding: 20px 15px;
+
+  }
+  .container .containerRankings .containerCenter {
+    width: 100%;
+    padding: 20px 15px;
+  }
+  .container .containerRankings .containerEnd {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .container .containerRankings .columnText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .container .containerRankings .listRanking {
+    margin-bottom: 10px;
+  }
+  .container .containerRankings .columnText .listaText {
+    margin-left: 0px;
+  }
+  .containerCards {
+    display: block;
+    padding: 0px 30px;
+    margin-top: 20;
+  }
+  .containerCards .cardStar{
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .containerCards .cardCenter{
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .containerCards .cardEnd{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+

@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Red: #ea5353;
+  --Cyan: #45d3d3;
+  --Orange: #fcaf4a;
+  --Blue: #549ef2;
+  --very-dark-blue: #4c4e61;
+  --Grayish-Blue: #a3a5ae;
+  --Very-Ligh-Gray: #fafafa;
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 1120px;
+}
+
+.container .containerText {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.container .containerText .subtitle {
+  color: var(--Grayish-Blue);
+  font-size: 36px;
+  font-weight: 200;
+}
+
+.container .containerText .title {
+  color: var(--very-dark-blue);
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.container .containerText .text {
+  color: var(--Grayish-Blue);
+  font-size: 16px;
+  font-weight: 200;
+}
+
+.container .containerCards {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .containerCards .containerCard1 {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding: 0px 5px;
+}
+
+.container .containerCards .containerCard1 .card1 {
+  height: 250px;
+  border-top: 5px solid var(--Cyan);
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0px 8px 7px 0px rgba(218, 228, 238, 0.5);
+}
+
+.container .containerCards .containerCard1 .card1 .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--very-dark-blue);
+}
+
+.container .containerCards .containerCard1 .card1 .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  margin-bottom: 20px;
+}
+
+.container .containerCards .containerCard1 .card1 .containerCardImg {
+  display: flex;
+  justify-content: end;
+}
+
+/* ///////////////////////////////////////////////// */
+
+.container .containerCards .containerCard2 {
+  width: 30%;
+  padding: 0px 5px;
+}
+
+.container .containerCards .containerCard2 .card2 {
+  height: 250px;
+  border-top: 5px solid var(--Red);
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0px 8px 7px 0px rgba(218, 228, 238, 0.5);
+  margin-bottom: 50px;
+}
+
+.container .containerCards .containerCard2 .card2 .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--very-dark-blue);
+}
+
+.container .containerCards .containerCard2 .card2 .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  margin-bottom: 20px;
+}
+
+.container .containerCards .containerCard2 .card2 .containerCardImg {
+  display: flex;
+  justify-content: end;
+}
+
+.container .containerCards .containerCard2 .card3 {
+  height: 250px;
+  border-top: 5px solid var(--Orange);
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0px 8px 7px 0px rgba(218, 228, 238, 0.5);
+  margin-bottom: 50px;
+}
+
+.container .containerCards .containerCard2 .card3 .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--very-dark-blue);
+}
+
+.container .containerCards .containerCard2 .card3 .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  margin-bottom: 20px;
+}
+
+.container .containerCards .containerCard2 .card3 .containerCardImg {
+  display: flex;
+  justify-content: end;
+}
+
+/* ///////////////////////////////////////////////// */
+
+.container .containerCards .containerCard3 {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  padding: 0px 5px;
+}
+
+.container .containerCards .containerCard3 .card3 {
+  height: 250px;
+  border-top: 5px solid var(--Blue);
+  border-radius: 5px;
+  padding: 20px 20px;
+  box-shadow: 0px 8px 7px 0px rgba(218, 228, 238, 0.5);
+}
+
+.container .containerCards .containerCard3 .card3 .title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--very-dark-blue);
+}
+
+.container .containerCards .containerCard3 .card3 .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--Grayish-Blue);
+  margin-bottom: 20px;
+}
+
+.container .containerCards .containerCard3 .card3 .containerCardImg {
+  display: flex;
+  justify-content: end;
+}
+
+@media (max-width: 768px) {
+  .body {
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .container .containerText {
+    width: 90%;
+  }
+  .container .containerCards {
+    display: block;
+    width: 100%;
+
+  }
+  .container .containerCards .containerCard1 {
+    justify-content: center;
+    width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 40px;
+  }
+  .container .containerCards .containerCard1 .card1 {
+    width: 70%;
+  }
+  .container .containerCards .containerCard2 {
+    width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 40px;
+  }
+  .container .containerCards .containerCard2 .card2 {
+    margin: auto;
+    width: 70%;
+    margin-bottom: 40px;
+  }
+  .container .containerCards .containerCard2 .card3 {
+    margin: auto;
+    width: 70%;
+  }
+
+  .container .containerCards .containerCard3 {
+    justify-content: center;
+    width: 100%;
+    padding: 0px 5px;
+    margin-bottom: 40px;
+  }
+  .container .containerCards .containerCard3 .card3 {
+    width: 70%;
+  }
+}
+
+@media (max-width:375px) {
+  .container .containerCards .containerCard1 .card1 {
+    width: 90%;
+  }
+  .container .containerCards .containerCard2 .card2 {
+    width: 90%;
+  }
+  .container .containerCards .containerCard2 .card3 {
+    width: 90%;
+  }
+  .container .containerCards .containerCard3 .card3 {
+    width: 90%;
+  }
+}

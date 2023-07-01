@@ -1,0 +1,157 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --background-color: #090b1a;
+  --background-card: #1b1938;
+  --color-title: #aa5cdb;
+  --white: #ffffff;
+  --color-text:rgba(255, 255, 255, 0.75);
+  --font-primary:'Inter', sans-serif;
+  --font-secundary: 'Lexend Deca', sans-serif;
+}
+
+.body {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCard {
+  width: 1110px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  color: var(--white);
+  background-color: var(--background-card);
+}
+
+.containerCard .cardDescription{
+  width: 50%;
+  font-family: var(--font-primary);
+  padding: 50px;
+  order: 1;
+}
+
+.containerCard .cardDescription .cardTitle {
+  font-size: 36px;
+  margin-bottom: 35px;
+}
+
+.containerCard .cardDescription .cardTitle b{
+  font-size: 36px; 
+  color: var(--color-title);
+}
+
+.containerCard .cardDescription .cardText {
+  color: var(--color-text);
+  width: 80%;
+  font-family: var(--font-secundary);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 70px;
+  line-height: 1.5;
+}
+
+.containerCard .cardDescription .containerCardNumbers{
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+
+.containerCard .cardDescription .containerCardNumbers .cardNumbers .numberTitle {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.containerCard .cardDescription .containerCardNumbers .cardNumbers .numberText {
+  font-size: 14px;
+  font-family: var(--font-secundary);
+  color: var(--color-text);
+  letter-spacing: 2px;
+}
+
+.containerCard .cardImg {
+  width: 50%;
+  height: 445px;
+  background-image: linear-gradient(to bottom, rgba(170, 92, 219, 0.5), rgba(170, 92, 219, 0.5)), url('./img/image-header-desktop.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  order: 2;
+}
+
+@media (max-width: 960px) {
+  .containerCard .cardDescription .cardTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .containerCard .cardDescription .cardTitle b{
+    font-size: 24px; 
+  }
+  .containerCard .cardDescription .cardText {
+    margin-bottom: 40px;
+    width: 100%;
+    line-height: 1;
+  }
+  .containerCard .cardDescription .containerCardNumbers{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .containerCard .cardDescription .containerCardNumbers .cardNumbers .numberTitle {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .containerCard .cardDescription .containerCardNumbers .cardNumbers {
+    margin-bottom: 10px;
+  }
+  
+  .containerCard .cardDescription .containerCardNumbers .cardNumbers .numberText {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 705px) {
+  .containerCard {
+    width: 90%;
+    overflow: hidden;
+    display: block;
+  }
+  .containerCard .cardImg {
+    width: 100%;
+    height: 240px;
+
+  }
+  .containerCard .cardDescription{
+    width: 100%;
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+  }
+  .containerCard .cardDescription .cardTitle {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+  
+  .containerCard .cardDescription .cardTitle b{
+    font-size: 26px; 
+  }
+  
+  .containerCard .cardDescription .cardText {
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+  .containerCard .cardDescription .containerCardNumbers .cardNumbers {
+    margin-bottom: 20px;
+  }
+}
+

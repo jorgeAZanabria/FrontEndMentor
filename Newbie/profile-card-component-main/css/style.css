@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+:root {
+  --Dark-cyan: #19a2ae;
+  --Dark-desaturated-blue: #2d3248;
+  --Dark-grayish-blue: #6a6f81;
+  --Dark-gray: #969696;
+}
+
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Dark-cyan);
+  font-family: 'Kumbh Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.body::before,
+.body::after {
+  content: "";
+  position: absolute;
+  transform: translateY(-50%);
+  width: 1000px; /* Ajusta el tamaño según tus necesidades */
+  height: 1000px; /* Ajusta el tamaño según tus necesidades */
+  background-image: url('./img/bg-pattern-top.svg'); /* Ruta de la primera imagen */
+  background-size: cover;
+}
+
+.body::before {
+  top: 0;
+  left: 50px; /* Ajusta la posición del primer círculo */
+}
+
+.body::after {
+  top:100%;
+  right: 20px; /* Ajusta la posición del segundo círculo */
+  background-image: url('./img/bg-pattern-bottom.svg'); /* Ruta de la segunda imagen */
+}
+
+.containerCard {
+  width: 350px;
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 15px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.containerCard .imgCard {
+  height: 140px;
+}
+
+.containerCard .perfilCard {
+  display: inline-block;
+  justify-content: center;
+  width: 100%;
+}
+
+.containerCard .perfilCard .containerImg .img {
+  margin-top: -55px;
+  border-radius: 50px;
+  border: 5px solid #ffffff;
+  margin-bottom: 20px;
+}
+
+.containerCard .perfilCard .titleCard {
+  font-size: 18px;
+  color: var(--Dark-desaturated-blue);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.containerCard .perfilCard .titleCard span{
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+}
+
+.containerCard .perfilCard .textCard {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.containerCard .perfilCard hr {
+  border: 1px solid var(--Dark-grayish-blue);
+}
+
+.containerCard .perfilCard .numbersCards {
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.containerCard .perfilCard .numbersCards .numberCard h3 {
+  font-size: 18px;
+  color: var(--Dark-desaturated-blue);
+  font-weight: 700;
+}
+
+.containerCard .perfilCard .numbersCards .numberCard p {
+  color: var(--Dark-grayish-blue);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
