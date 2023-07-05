@@ -1,4 +1,4 @@
-*{
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -17,31 +17,37 @@
   align-items: center;
   justify-content: center;
   background-color: var(--Dark-cyan);
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
   position: relative;
   overflow: hidden;
 }
 
-.body::before,
+.body::before {
+  content: "";
+  position: absolute;
+  top: -200px;
+  left: -200px;
+  width: 600px;
+  height: 600px;
+  background-image: url('./img/bg-pattern-top.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+}
+
 .body::after {
   content: "";
   position: absolute;
-  transform: translateY(-50%);
-  width: 1000px; /* Ajusta el tamaño según tus necesidades */
-  height: 1000px; /* Ajusta el tamaño según tus necesidades */
-  background-image: url('./img/bg-pattern-top.svg'); /* Ruta de la primera imagen */
+  bottom: -200px;
+  right: -200px;
+  width: 600px;
+  height: 600px;
+  background-image: url('./img/bg-pattern-bottom.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-}
-
-.body::before {
-  top: 0;
-  left: 50px; /* Ajusta la posición del primer círculo */
-}
-
-.body::after {
-  top:100%;
-  right: 20px; /* Ajusta la posición del segundo círculo */
-  background-image: url('./img/bg-pattern-bottom.svg'); /* Ruta de la segunda imagen */
+  z-index: -1;
 }
 
 .containerCard {
@@ -77,7 +83,7 @@
   margin-bottom: 15px;
 }
 
-.containerCard .perfilCard .titleCard span{
+.containerCard .perfilCard .titleCard span {
   color: var(--Dark-grayish-blue);
   font-weight: 400;
 }
@@ -109,4 +115,15 @@
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .body::before {
+    width: 400px;
+    height: 400px;
+  }
+  .body::after {
+    width: 400px;
+    height: 400px;
+  }
 }
