@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+:root {
+  --resaturated-red: #ce9797;
+  --soft-red: #f96262;
+  --dark-grayish-red: #413a3a;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./img/bg-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: center none;
+  background-size: cover;
+}
+
+.containerCard {
+  display: flex;
+  width: 1440px;
+}
+
+.containerCard .containerText {
+  width: 65%;
+  padding: 65px 165px;
+}
+
+.containerCard .containerText .logo {
+  margin-bottom: 135px;
+}
+
+.containerCard .containerText .containerImg2 {
+  display: none;
+  height: 250px;
+  background-image: url('./img/hero-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center none;
+  background-size: cover;
+}
+
+.containerCard .containerText .subTitle {
+  font-size: 85px;
+  font-weight: 300;
+  color: var(--resaturated-red);
+  margin-bottom: 15px;
+}
+
+.containerCard .containerText .title {
+  font-size: 85px;
+  font-weight: 500;
+  color: var(--dark-grayish-red);
+  margin-bottom: 30px;
+}
+
+.containerCard .containerText .text {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--resaturated-red);
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.containerCard .containerText .form .containerForm {
+  display: flex;
+  align-items: center;
+}
+
+.containerCard .containerText .form .containerForm .containerCorreo {
+  min-width: 90%;
+  padding: 20px 32px;
+  border: 0.5px solid var(--dark-grayish-red);
+  border-radius: 50px;
+  color: var(--resaturated-red);
+  background-color: transparent;
+}
+
+.containerCard .containerText .form .containerForm .containerCorreo::placeholder{
+  color: var(--resaturated-red);
+}
+
+.containerCard .containerText .form .containerForm .containerCorreo:focus {
+  outline: none;
+}
+
+.containerCard .containerText .form .containerForm .button {
+  background: linear-gradient(135deg, #F9B9BA 0%, #F29391 100%);
+  border-radius: 50px;
+  padding: 20px 0px;
+  width: 100px;
+  border: none;
+  margin-left: -80px;
+  position: relative;
+}
+
+.containerCard .containerText .form .containerForm .button {
+  background: linear-gradient(135deg, #F9B9BA 0%, #F29391 100%);
+  border-radius: 50px;
+  padding: 20px 0px;
+  width: 100px;
+  border: none;
+  margin-left: -80px;
+}
+
+.containerCard .containerText .form .containerForm .iconError{
+  margin-left: -130px;
+  display: none;
+}
+
+.containerCard .containerText .form .mensajeError {
+  margin-top: 20px;
+  color: var(--soft-red);
+  padding: 0px 32px;
+  display: none;
+}
+
+.containerCard .containerImg {
+  width: 35%;
+  background-image: url("../css/img/hero-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center none;
+  background-size: cover;
+}
+
+@media (max-width: 950px) {
+  .body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  .containerCard {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid red;
+    margin-top: 40px;
+    padding: 40px 0px;
+  }
+
+  .containerCard .containerText {
+    width: 100%;
+    padding: 0px 0px;
+  }
+
+  .containerCard .containerText .logo {
+    margin-left: 20px;
+    margin-bottom: 40px;
+  }
+
+  .containerCard .containerText .containerImg2 {
+    display: block;
+    margin-bottom: 65px;
+  }
+
+  .containerCard .containerText .subTitle {
+    font-size: 36px;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  
+  .containerCard .containerText .title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 0px 20px;
+  }
+  .containerCard .containerText .text {
+    font-size: 14px;
+    text-align: center;
+    padding: 0px 20px;
+  }
+  .containerCard .containerText .form{
+    margin: auto;
+    width: 90%;
+  }
+  .containerCard .containerText .form .containerForm .containerCorreo {
+    min-width: 100%;
+  }
+  .containerCard .containerImg {
+    display: none;
+  }
+}
