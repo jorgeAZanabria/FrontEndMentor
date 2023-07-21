@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --Red: #ff7a7a;
+  --Green: #38cc8c;
+  --Blue: #6055a5;
+  --Dark-Blue: #3e3c49;
+  --Grayish-Blue: #b9b6d3;
+}
+
+body {
+  background-color: var(--Red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("./img/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+}
+
+.container .containerInfo {
+  width: 50%;
+  color: #fff;
+  padding: 2rem;
+}
+
+.container .containerInfo h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 38px;
+}
+
+.containerForm {
+  width: 50%;
+  padding: 1rem;
+}
+
+.container .containerForm .tagForm {
+  text-align: center;
+  background-color: var(--Blue);
+  border-radius: 10px;
+  box-shadow: 0px 9px 0px 0px #d76466;
+  padding: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.container .containerForm .cardForm {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.container .containerForm .cardForm .form {
+  padding: 40px;
+}
+
+.container .containerForm .cardForm .form .form-control {
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+  position: relative;
+}
+
+.container .containerForm .cardForm .form .form-control input {
+  border: 1px solid var(--Grayish-Blue);
+  color: var(--Dark-Blue);
+  border-radius: 4px;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  width: 100%;
+}
+
+.container .containerForm .cardForm .form .form-control input:focus {
+  outline: none;
+}
+
+.container .containerForm .cardForm .form .form-control.error input {
+  border-color: #e74c3c;
+}
+
+.container .containerForm .cardForm .form .form-control .iconError {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  visibility: hidden;
+}
+
+.container .containerForm .cardForm .form .form-control.error .textError {
+  color: var(--Red);
+  visibility: visible;
+}
+
+.container .containerForm .cardForm .form .form-control.error .iconError {
+  color: var(--Red);
+  visibility: visible;
+}
+
+.container .containerForm .cardForm .form .form-control .textError {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  color: var(--Red);
+  font-size: 12px;
+}
+
+.container .containerForm .cardForm .form button {
+  border: none;
+  background-color: var(--Green);
+  border-bottom: 5px solid #3eb37f;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+}
+
+.container .containerForm .cardForm .form .textForm {
+  color: var(--Grayish-Blue);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.container .containerForm .cardForm .form .textForm b {
+  color: var(--Red);
+}
+
+@media (max-width: 550px) {
+  body {
+    display: block;
+    height: 100%;
+    margin-top: 50px;
+  }
+  .container {
+    max-width: 100%;
+    display: block;
+  }
+  .container .containerInfo {
+    width: 100%;
+    text-align: center;
+  }
+  .container .containerInfo h2 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 30px;
+  }
+  .containerForm {
+    margin-top: 10px;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 30px;
+  }
+  .container .containerForm .cardForm .form {
+    padding: 30px 20px;
+  }
+  .container .containerForm .cardForm .form .form-control {
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+  }
+
+  .container .containerForm .cardForm .form .form-control input {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 15px 15px;
+  }
+  .container .containerForm .cardForm .form .form-control .iconError {
+    top: 13px;
+    right: 15px;
+  }
+}
