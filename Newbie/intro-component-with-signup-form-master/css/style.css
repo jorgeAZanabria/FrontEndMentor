@@ -63,6 +63,7 @@ body {
 .container .containerForm .cardForm {
   background-color: #fff;
   border-radius: 10px;
+  box-shadow: 0px 9px 0px 0px #d76466;
 }
 
 .container .containerForm .cardForm .form {
